@@ -20,10 +20,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Environment variables
-TELEGRAM_TOKEN = os.getenv('7605808059:AAFV6oAbW9SJPdK518BnSnnkbanYvQmuzhs')
-STABILITY_KEY = os.getenv('sk-H8wzi6SeZIDiULjRPoXpP9oLBs5v1qKhuMMGZmo6spej7smG')
-
 # Initialize Stability AI client
 stability_api = client.StabilityInference(
     key=STABILITY_KEY,
